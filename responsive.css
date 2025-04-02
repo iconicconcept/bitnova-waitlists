@@ -1,0 +1,171 @@
+@media (max-width: 620px){
+   #waitlist{
+    background-size: 100px, 100px, 90px, 50px, 50px;
+    padding: 2px 15px;
+    height: 102vh;
+    width: 100%;
+   } 
+
+   #waitlist .nav-frame{
+    width: 85%;
+    padding: 8px 16px;
+    align-items: center;
+   }
+
+   #waitlist .nav-frame .nav-bar{
+    display: none;
+   }
+
+   #waitlist .nav-frame button{
+    display: none;
+   }
+
+   #waitlist .nav-frame .navigate{
+    display: flex;
+    font-size: 22px;
+   }
+
+   #waitlist .nav-frame .navigate:hover{
+    cursor: pointer;
+   }
+
+   #waitlist .nav-frame .navigate .fa-bars{
+    display: flex;
+    color: var(--main);
+   }
+
+   #waitlist .nav-frame .navigate .fa-close{
+    display: none;
+    color: var(--main);
+   }
+
+   .menu-section{
+    display: none;
+    height: max-content;
+    width: 75%;
+    background-color: var(--grey);
+    position: absolute;
+    z-index: 10000;
+    top: 110px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+   }
+
+   .menu-section .nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   }
+
+   .menu-section .nav-bar ul li{
+    list-style: none;
+   }
+
+   .menu-section .nav-bar ul li a{
+     text-decoration: none;
+     color: var(--b);
+     text-transform: capitalize;
+     font-weight: 600;
+     font-size: 18px;
+     font-family: "Nunito", sans-serif;
+    }
+
+    .menu-section .nav-bar ul li a:hover{
+    background-color: var(--green);
+    padding: 10px 70px;
+    border-radius: 10px;
+   }
+
+   .menu-section button{
+     padding: 6px 25px;
+     background-image:linear-gradient(to right, var(--d_green), var(--l_green));
+     outline: none;
+     border: none;
+     border-radius: 30px;
+     color: var(--white);
+    }
+
+    .menu-section button a{
+     text-decoration: none;
+     color: var(--white);
+     font-family: "nunito", sans-serif;
+    }
+
+   #waitlist .waitlist-frame{
+    top: 150px;
+    gap: 25px;
+    width: 90%;
+    padding: 18px;
+   }
+
+   #waitlist .waitlist-frame h1{
+    font-size: 30px;
+   }
+
+   /* #waitlist .waitlist-frame p{
+
+   } */
+
+   #waitlist .waitlist-frame .join{
+    flex-direction: column;
+    gap: 10px;
+   }
+
+    #waitlist .waitlist-frame .join input{
+        padding: 8px 5px 8px 15px;
+    }
+   
+    #waitlist .waitlist-frame .join button{
+        padding: 8px 30px;
+    }
+
+    #waitlist .waitlist-frame .connect .linkedin{
+        height: 36px;
+        width: 36px;
+    }
+    
+    #waitlist .waitlist-frame .connect .linkedin .fa-linkedin{
+        font-size: 18px;
+        margin-top: 9px;
+    }
+    
+    #waitlist .waitlist-frame .connect .x{
+        height: 36px;
+        width: 36px;
+    }
+    
+    #waitlist .waitlist-frame .connect .x .fa-x-twitter{
+        font-size: 18px;
+        margin-top: 9px;
+    }
+    
+    #waitlist .waitlist-frame .connect .instagram{
+        height: 36px;
+        width: 36px;
+    }
+    
+    #waitlist .waitlist-frame .connect .instagram .fa-instagram{
+        font-size: 18px;
+        margin-top: 9px;
+    }
+
+
+    #waitlist .eclipse2{
+        left: 24px;
+        top: 47px;
+        width: 100px;
+        z-index: 50px;
+    } 
+    
+    #waitlist .eclipse3{
+        right: 30px;
+        bottom: 22px;
+        width: 100px;
+        z-index: 50px;
+    } 
+    
+}

@@ -10,11 +10,13 @@
 
 :root{
     --main: #0C2733;
+    --lightmain: #3D525C;
     --white: #fff;
     --grey: #C4C4C4;
     --green: #0CC9A2;
     --d_green: #3D525C;
     --l_green: #0BB793;
+    --grey: #7F7F7F;
 }
 
 body{
@@ -41,7 +43,7 @@ body{
 }
 
 #waitlist .nav-frame{
-    width: 888px;
+    width: 70%;
     height: 78px;
     top: 27px;
     border-radius: 16px;
@@ -53,6 +55,14 @@ body{
     z-index: 999;
     box-shadow: 5px 5px 10px #0BB79314;
     position: absolute;
+}
+
+#waitlist .nav-frame .navigate{
+    display: none;
+}
+
+.menu-section{
+    display: none;
 }
 
 #waitlist .nav-frame .nav-bar{
@@ -82,7 +92,7 @@ body{
 
 #waitlist .nav-frame button{
     padding: 6px 25px;
-    background-image:linear-gradient(to left, var(--d_green), var(--l_green));
+    background-image:linear-gradient(to right, var(--d_green), var(--l_green));
     outline: none;
     border: none;
     border-radius: 30px;
@@ -100,10 +110,10 @@ body{
     /* height: 400px; */
     height: max-content;
     padding: 5px 16px 0 16px;
-    width: 980px;
+    width: 85%;
     /* background-color: red; */
     position: absolute;
-    top: 200px;
+    top: 180px;
     gap: 35px;
     display: flex;
     flex-direction: column;
@@ -117,36 +127,48 @@ body{
     font-size: 42px;
     color: var(--main);
     font-family: "mulish", sans-serif;
+    font-weight: 600;
+    max-width: 900px;
+}
+
+#waitlist .waitlist-frame h1 i{
+    font-weight: 500;
+    color: var(--lightmain);
 }
 
 #waitlist .waitlist-frame p{
     font-size: 16px;
     font-family: "Nunito", sans-serif;
-    color: var(--d_green);
+    color: var(--grey);
     max-width: 600px;
 }
 
-#waitlist .waitlist-frame input{
-    padding: 3px;
+#waitlist .waitlist-frame .join{
+    display: flex;
+    gap: 10px;
+}
+
+#waitlist .waitlist-frame .join input{
+    padding: 5px 5px 5px 15px;
     width: 230px;
     border: 1px solid var(--grey);
     outline: none;
-    text-align: center;
     font-family: "nunito", sans-serif;
-    border-radius: 8px;
+    border-radius: 50px;
+    font-size: 12px;
 }
 
-#waitlist .waitlist-frame button{
-    padding: 8px 60px;
-    background-image:linear-gradient(to left, var(--d_green), var(--l_green));
+#waitlist .waitlist-frame .join button{
+    padding: 10px 33px;
+    background-image:linear-gradient(to right, var(--d_green), var(--l_green));
     color: var(--white);
     border-radius: 50px;
     border: none;
     outline: none;
 }
 
-#waitlist .waitlist-frame button a{
-    font-size: 20px;
+#waitlist .waitlist-frame .join button a{
+    font-size: 18px;
     font-family: 32px;
     font-weight: 600;
     text-decoration: none;
@@ -154,6 +176,85 @@ body{
     border: none;
     font-family: "nunito", sans-serif;
     color: var(--white);
+}
+
+#waitlist .waitlist-frame .connect{
+    display: flex;
+    gap: 10px;
+}
+
+#waitlist .waitlist-frame .connect .linkedin{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: lightgray;
+    font-display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 80%;
+}
+
+#waitlist .waitlist-frame .connect .linkedin:hover{
+    cursor: pointer;
+}
+
+#waitlist .waitlist-frame .connect .linkedin .fa-linkedin{
+    font-size: 22px;
+    color: transparent;
+    background-clip: tex;
+    color: var(--l_green);    
+    align-self: center;
+    text-align: center;
+    justify-self: center;
+    margin-top: 8px;
+}
+
+#waitlist .waitlist-frame .connect .x{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: lightgray;
+    font-display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 80%;
+}
+
+#waitlist .waitlist-frame .connect .x:hover{
+    cursor: pointer;
+}
+
+#waitlist .waitlist-frame .connect .x .fa-x-twitter{
+    font-size: 22px;
+    color: var(--l_green);
+    align-self: center;
+    text-align: center;
+    justify-self: center;
+    margin-top: 8px;
+}
+
+#waitlist .waitlist-frame .connect .instagram{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: lightgray;
+    font-display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 80%;
+}
+
+#waitlist .waitlist-frame .connect .instagram:hover{
+    cursor: pointer;
+}
+
+#waitlist .waitlist-frame .connect .instagram .fa-instagram{
+    font-size: 22px;
+    color: var(--l_green);
+    align-self: center;
+    text-align: center;
+    justify-self: center;
+    margin-top: 8px;
 }
 
 #waitlist .eclipse2{

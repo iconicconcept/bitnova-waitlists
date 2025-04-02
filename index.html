@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="117x46" href="./images/favicon.png">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <title>BitNova waitList</title>
     <script src="./script.js" async></script>
 </head>
@@ -12,6 +14,10 @@
     <section id="waitlist">
         <header class="nav-frame">
             <img src="./images/favicon.png" alt="logo" class="nav-frame-logo">
+            <div class="navigate">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-close"></i>
+            </div>
             <nav class="nav-bar">
                 <ul>
                     <li><a href="#home">home</a></li>
@@ -22,19 +28,42 @@
             <button class="nav-frame-button"><a href="">Connect Wallet</a></button>
         </header>
 
+        <div class="menu-section">
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#features">features</a></li>
+                    <li><a href="#help">help</a></li>
+                </ul>
+            </nav>
+            <button class="nav-frame-button"><a href="">Connect Wallet</a></button>
+        </div>
+
         <div class="waitlist-frame">
-            <h1>Forget Wallet Addresses, Transact like a
-                Pro Via Link with Bitnova</h1>
-            <p>Bitnova simplifies Crypto transactions by 
-                offering customizable, secure links that 
-                ease interactions and enhance the user experience.</p>
-            <input type="email" id="user-email" placeholder="user@gmail.com">
-            <button class="nav-frame-button"><a href="">Join the waitlist now</a></button>
+            <h1>Be the First to get update by Joining Our <i>Waitlist!</i></h1>
+            <p>Be the first to experience Bitnova. Join our waitlist for exclusive benefits
+                 and revolutionary crypto solutions.</p>
+            <div class="join">
+                <input type="email" id="user-email" placeholder="Enter your Email">
+                <button class="nav-frame-button"><a href="">Join waitlist</a></button>
+            </div>
+            <div class="connect">
+                <div class="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="x">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <div class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+
         </div>
         <img src="./images/Ellipse 2.png" alt="" class="eclipse2">
         <img src="./images/Ellipse 3.png" alt="" class="eclipse3">
     </section>
 
-
+    <script src="./script.js"></script>
 </body>
 </html>
