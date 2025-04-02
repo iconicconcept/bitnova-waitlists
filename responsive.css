@@ -106,10 +106,6 @@
     font-size: 30px;
    }
 
-   /* #waitlist .waitlist-frame p{
-
-   } */
-
    #waitlist .waitlist-frame .join{
     flex-direction: column;
     gap: 10px;
